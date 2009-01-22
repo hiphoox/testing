@@ -1,0 +1,351 @@
+    1  ipconfig
+    2  ip
+    3  ipg
+    4  ipcs
+    5  ipcrm
+    6  so
+    7  sudo yast2
+    8  yast2
+    9  yast
+   10  ya
+   11  Yast
+   12  Yast2
+   13  YaST2
+   14  ipconfg
+   15  ipconfig
+   16  netstat
+   17  dhcpcd
+   18  ipconfig
+   19  xterm 
+   20  ip
+   21  ls
+   22  cd D
+   23  cd Django-1.0.2-final/
+   24  ls
+   25  cd Django-1.0.2-final/
+   26  ls
+   27  cd ..
+   28  cd Django-1.0.2-final/
+   29  mv * /home/user/Django-1.0.2-final/
+   30  ls
+   31  cd ..
+   32  ls
+   33  rmdir Django-1.0.2-final/
+   34  python
+   35  setup.py install
+   36  ls
+   37  pyton setup.py install
+   38  python setup.py install
+   39  sudo python setup.py install
+   40  python
+   41  cd /usr/lib/python2.5/
+   42  ls
+   43  cd conf
+   44  ls c
+   45  dir c
+   46  ls c*
+   47  cd ..
+   48  cd python
+   49  ls
+   50  ls co*
+   51  ls ma*
+   52  cd ..
+   53  cd python2.5/
+   54  cd compiler/
+   55  ls
+   56  cd ..
+   57  pwd
+   58  cd /home/user/Django-1.0.2-final/
+   59  ls
+   60  sudo python
+   61  grep history
+   62  grep | history
+   63  sudo python setup.py install
+   64  python setup.py install
+   65  vi setup.py 
+   66  cd Django-1.0.2-final/
+   67  ls
+   68  sudo python setup.py install
+   69  cd Django-1.0.2-final/
+   70  ls
+   71  sudo python setup.py install
+   72  sudo python setup.py
+   73  sudo python setup.py INSTALL
+   74  sudo python setup.py install
+   75  cd django
+   76  ls
+   77  cd conf
+   78  ls
+   79  cd ..
+   80  ls
+   81  ls -la
+   82  vi .setup.py.swp 
+   83  sudo python setup.py install
+   84  ipconfig
+   85  ip
+   86  ip addr
+   87  ip link
+   88  ip
+   89  ip maddr
+   90  ping 192.165.137.274
+   91  ping 192.168.137.174
+   92  sudo python setup.py install
+   93  exit
+   94  quit
+   95  exit
+   96  sudo zypper install gcc make automake autoconf kernel-source
+   97  ping 192.168.137.174
+   98  d4x
+   99  sudo zypper install gcc make automake autoconf kernel-source
+  100  cd Desktop/
+  101  sudo sh VBoxLinuxAdditions-x86.run 
+  102  cd tcm
+  103  python manage.py startapp fulltcm
+  104  xfce4-panel 
+  105  exit
+  106  cd Django-1.0.2-final/
+  107  ls
+  108  cd django/
+  109  ls
+  110  cd bin
+  111  ls
+  112  cd ..
+  113  ls
+  114  find
+  115  find --help
+  116  man find
+  117  find -name models
+  118  cd db
+  119  cd models
+  120  ls
+  121  cd /home
+  122  ls
+  123  cd user/
+  124  ls
+  125  cd tcm
+  126  ls
+  127  rm \home\user?cm\sqlite3.db
+  128  konker
+  129  konkeror
+  130  clear
+  131  pwd
+  132  python manage.py syncdb
+  133  ping google.com
+  134  proxymngr 
+  135  exit
+  136  netstat
+  137  clear
+  138  net
+  139  kintenet
+  140  kroot
+  141  kroot /sbin/YaST2 lan
+  142  sudo kroot /sbin/YaST2 lan
+  143  apt-get install graphviz
+  144  svn checkout http://django-command-extensions.googlecode.com/svn/trunk/ django-command-extensions
+  145  ip
+  146  ip c
+  147  ipc
+  148  ip link
+  149  ip addr
+  150  ping google.com
+  151  ping 209.85.171.100
+  152  svn checkout http://74.125.47.82/svn/trunk/ django-command-extensions
+  153  sudo /sbin/yast2 lan
+  154  ping google.com
+  155  sudo nautilus
+  156  sudo nautillus
+  157  sudo nautilus
+  158  nautilus
+  159  ping google.com
+  160  sudo /sbin/YaST2 lan
+  161  sudo /sbin/YaST2 -lan
+  162  kroot sudo /sbin/YaST2 lan
+  163  top
+  164  sudo xfce4-applications
+  165  sudo xfce4-appfinder 
+  166  sudo xfce4-appfinder
+  167  xfce4-appfinder
+  168  su
+  169  ping google.com
+  170  ip addres
+  171  sudo /sbin/yast2 --qt lan
+  172  sudo /sbin/yast2 lan --qt
+  173  kroot sudo /sbin/yast2 lan --qt
+  174  sudo kroot /sbin/yast2 --qt lan
+  175  ping google.com
+  176  ping 192.168.137.174
+  177  sudo kroot /sbin/yast2 firewall --qt
+  178  kroot x
+  179  kroot xfce4-appfinder 
+  180  su
+  181  exit
+  182  cd Django-1.0.2-final/
+  183  cd django-command-extensions/
+  184  python setup.py install
+  185  sudo python setup.py install
+  186  python
+  187  cd /home
+  188  cd user
+  189  ls
+  190  cd Desktop/
+  191  ls
+  192  pwd
+  193  ip addres
+  194  ping google.com
+  195  ping www.google.com
+  196  ping google.com
+  197  su
+  198  cd /sbin
+  199  ls
+  200  cd ..
+  201  cd /bin
+  202  ls
+  203  cd ..
+  204  cd /home
+  205  cd user/
+  206  cd D
+  207  cd Desktop/
+  208  cd ..
+  209  ls
+  210  cd eric4-4.2.5/
+  211  ls
+  212  python install.py
+  213  cd /home/user
+  214  cd Desktop/
+  215  ls
+  216  cd ..
+  217  cd Komodo-Edit-5.0.3-2767-linux-libcpp6-x86/
+  218  ls
+  219  sudo ./install.sh
+  220  cd ..
+  221  cd /root
+  222  cd /
+  223  ls
+  224  su
+  225  cd tcm
+  226  ls
+  227  python manage.py syncdb
+  228  python manage.py graph_models -a > tcmgraph.dot
+  229  python manage.py graph_models -a -g -o > tcmgraph.png
+  230  python manage.py graph_models -g -o > tcmgraph.png
+  231  python manage.py graph_models -a -g -o tcmgraph.png
+  232  apt-get
+  233  apt install python-pygraphviz
+  234  sudo apt install python-pygraphviz
+  235  firefox
+  236  python manage.py graph_models -g -o > tcmgraph.png
+  237  python manage.py graph_models -a > tcmgraph.dot
+  238  vi tcmgraph.dot
+  239  netstat
+  240  sudo /sbin/yast2 firewall --qt
+  241  clear
+  242  python manage.py syncdb
+  243  python manage.py graph_models -a > tcmgraph.dot
+  244  ping google.com
+  245  VBoxControl
+  246  sudo VBoxControl
+  247  sudo VBoxControl enumerate
+  248  sudo VBoxControl enumerate 
+  249  sudo VBoxControl enumerate clip
+  250  sudo VBoxClient
+  251  cd tcm/
+  252  ls
+  253  ping google.com
+  254  easy_install
+  255  python easy_install
+  256  setuptools
+  257  python
+  258  pwd
+  259  ls
+  260  cd Desktop/
+  261  ls
+  262  sh pygraphviz-0.99.1-py2.4-linux-i686.egg 
+  263  easy_install pygraphviz-0.99.1-py2.4-linux-i686.egg 
+  264  sudo easy_install pygraphviz-0.99.1-py2.4-linux-i686.egg 
+  265  cd ..
+  266  cd tcm/
+  267  ls
+  268  python manage.py syncdb
+  269  grep "
+  270  grep |history
+  271  python manage.py graph_models -a -g -o tcmgraph.png
+  272  python manage.py syncdb
+  273  clear
+  274  python manage.py syncdb
+  275  python manage.py help
+  276  clear
+  277  python manage.py syncdb
+  278  python manage.py graph_models -a -g -o tcmgraph.png
+  279  python manage.py syncdb
+  280  python manage.py graph_models -a -g -o tcmgraph.png
+  281  clear
+  282  cd .ssh
+  283  ssh
+  284  ssh-keygen -t rsa
+  285  ls
+  286  cat /home/user/.ssh/id_rsa | xclip
+  287  cat /home/user/.ssh/id_rsa
+  288  clear
+  289  git
+  290  clear
+  291  mkdir testing
+  292  ls
+  293  cd /home/user
+  294  ls
+  295  mkdir testing
+  296  cd testing
+  297  git init
+  298  touch README
+  299  git add README
+  300  git commit - 'first commit'
+  301  git commit -m 'first commit'
+  302  git remote add origin git@github.com:stonefree/testing.git
+  303  git push origin master
+  304  man git
+  305  grep | history
+  306  ls
+  307  mirsa.txt
+  308  gedit mirsa.txt 
+  309  cd /home/user/
+  310  rmdir .ssh
+  311  rm -r .ssh
+  312  grep | history
+  313  ssh-keygen
+  314  cd .ssh
+  315  ls
+  316  vi id_rsa
+  317  vi id_rsa.pub
+  318  cat id_rsa.pub
+  319  cat id_rsa.pub > key.txt
+  320  clear
+  321  grep | history
+  322  git remote add origin git@github.com:stonefree/testing.git
+  323  cd ..
+  324  cd testing/
+  325  git remote add origin git@github.com:stonefree/testing.git
+  326  ls
+  327  rm mirsa.txt 
+  328  ls
+  329  clear
+  330  git remote add origin git@github.com:stonefree/testing.git
+  331  grep | history
+  332  git push origin master
+  333  ls
+  334  cd ..
+  335  cd testing
+  336  clear
+  337  cp /home/user/tcm/ /home/user/testing/
+  338  ls
+  339  clear
+  340  git status
+  341  git add README
+  342  git status
+  343  git commit -m 'update readme'
+  344* git push
+  345  ls -la
+  346  cd .git
+  347  ls
+  348  cd ..
+  349  git push
+  350  grep | history > /home/user/hists.txt
+  351  grep | history > hists.txt

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.2.dtd">
+<!-- eric4 project file for project django-tcm -->
+<!-- Saved: 2009-01-15, 12:40:45 -->
+<!-- Copyright (C) 2009 , luisernesto.toledo@gmail.com -->
+<Project version="4.2">
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Django</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email>luisernesto.toledo@gmail.com</Email>
+  <Sources>
+    <Source>
+      <Dir>fulltcm</Dir>
+      <Name>__init__.py</Name>
+    </Source>
+    <Source>
+      <Dir>fulltcm</Dir>
+      <Name>views.py</Name>
+    </Source>
+    <Source>
+      <Dir>fulltcm</Dir>
+      <Name>models.py</Name>
+    </Source>
+    <Source>
+      <Name>settings.py</Name>
+    </Source>
+    <Source>
+      <Name>__init__.py</Name>
+    </Source>
+    <Source>
+      <Name>urls.py</Name>
+    </Source>
+    <Source>
+      <Name>manage.py</Name>
+    </Source>
+    <Source>
+      <Dir>fulltcm</Dir>
+      <Name>admin.py</Name>
+    </Source>
+  </Sources>
+  <Forms>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.html" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.htm" type="FORMS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+  </FiletypeAssociations>
+</Project>
