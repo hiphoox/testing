@@ -2,6 +2,13 @@ from personal.models import Person, Region, Puesto
 from django.contrib import admin
  
 
+admin.site.register(Region)
+
+admin.site.register(Puesto)
+
+
+
+
 class PersonAdmin(admin.options.ModelAdmin):
     fieldsets =  [
         (None,              {'fields': ['first_name', 'last_name']}),
@@ -11,8 +18,8 @@ class PersonAdmin(admin.options.ModelAdmin):
         ('Otros',           {'fields': ['birthday','passport','visa'], 'classes': ['collapse']}),
         ('Comentarios',     {'fields': ['coment'], 'classes': ['collapse']}),
     ]
-    list_display=('first_name', 'status', 'puesto', 'antiguedad')
-    list_filter=('first_name', 'status', 'region', 'puesto')
+    list_display=('first_name' , 'last_name', 'status','region', 'puesto', 'antiguedad')
+    list_filter=('status', 'region', 'puesto')
 
 #class RegionAdmin(admin.options.ModelAdmin):
 #    list_display=('name')
@@ -22,11 +29,6 @@ class PersonAdmin(admin.options.ModelAdmin):
 
 
 admin.site.register(Person, PersonAdmin)
-
-admin.site.register(Region)
-
-admin.site.register(Puesto)
-
 
 
 
