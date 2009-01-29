@@ -1,9 +1,9 @@
 from django.db import models
 
 #done
-class Audits(models.Model):
-    person = models.ForeignKey('personal.Persons')
-    project = models.ForeignKey('clientes.Projects')
+class Audit(models.Model):
+    person = models.ForeignKey('personal.Person')
+    project = models.ForeignKey('clientes.Project')
     start_date = models.DateTimeField('start')
     interview_date = models.DateTimeField()
     end_date = models.DateTimeField('end')
@@ -18,8 +18,8 @@ class Audits(models.Model):
         return '%s - %s (%s)' % (self.person ,  self.project ,  self.end_date)
 
 class Coaching(models.Model):
-    person = models.ForeignKey('personal.Persons')
-    project = models.ForeignKey('clientes.Projects')
+    person = models.ForeignKey('personal.Person')
+    project = models.ForeignKey('clientes.Project')
     session_date = models.DateTimeField('Session')
     fase_analisis = models.IntegerField('Analisis')
     fase_diseno = models.IntegerField('Diseno')
@@ -30,7 +30,8 @@ class Coaching(models.Model):
     other_commens = models.CharField(max_length=500)
     def __unicode__(self):
         return '%s - %s (%s)' % (self.person ,  self.project ,  self.session_date)
-
+    def average(self):
+        return sum(fase_analisis, fase_diseno, fase_ejecucion, fase_regresion, fase_estabilizacion, fase_cierre) / 6
 
 
 

@@ -4,6 +4,19 @@ from django.db import models
 ###Organizational
  
 #done
+
+class ProjectType(models.Model):
+    PROJECT_TYPE_CHOICES = (('F','Fabrica'),('A','Asignacion'))
+    name=models.CharField(max_length=1, choices=PROJECT_TYPE_CHOICES)
+    def __unicode__(self):
+        return self.name
+
+class ProjectComercialType(models.Model):
+    PROJECT_COMERCIAL_TYPE_CHOICES = (('C','Cerrado'),('T','Tiempo y Materiales'))
+    name=models.CharField(max_length=1, choices=PROJECT_COMERCIAL_TYPE_CHOICES)
+    def __unicode__(self):
+        return self.name
+
 class InternalBusinessArea(models.Model):
     name=models.CharField(max_length=50)
     def __unicode__(self):
@@ -16,28 +29,28 @@ class OrganizationalPersonStatus(models.Model):
         return self.name
  
 #done
-class BusinesClasses(models.Model):
+class BusinesClass(models.Model):
     name = models.CharField(max_length=50)
     def __unicode__(self):
         return self.name
  
-class Clients(models.Model):
+class Client(models.Model):
     name = models.CharField(max_length=50)
     legal_ame = models.CharField(max_length=50)
-    bussines_class = models.ForeignKey(BusinesClasses)
+#    bussines_class = models.ForeignKey(BusinesClass)
     def __unicode__(self):
         return self.name
 
 class ClientBusiness(models.Model):
-    client = models.ManyToManyField(Clients)
-    b_class = models.ManyToManyField(BusinesClasses)
+    client = models.ManyToManyField(Client)
+    b_class = models.ManyToManyField(BusinesClass)
     i_class = models.ManyToManyField(InternalBusinessArea)
     def __unicode__(self):
         return '%s - %s > %s' % (Clients.name ,  BusinesClasses.name ,  InternalBusinessArea.name)
 #
-class OrganizationalPersons(models.Model):
+class OrganizationalPerson(models.Model):
     name = models.CharField(max_length=200)
-    work_for = models.ForeignKey(Clients)
+    work_for = models.ForeignKey(Client)
     status = models.ForeignKey(OrganizationalPersonStatus)
     email_1 = models.CharField(max_length=40)
     puesto = models.CharField(max_length=40)
@@ -45,25 +58,30 @@ class OrganizationalPersons(models.Model):
     def __unicode__(self):
         return self.name
 
-class ApplicationModules(models.Model):
+class ApplicationModule(models.Model):
     name=models.CharField(max_length=100)
     def __unicode__(self):
         return self.name
 
-class Applications(models.Model):
+class Application(models.Model):
     full_name= models.CharField(max_length=200)
     short_name = models.CharField(max_length=15)
-    module = models.ManyToManyField(ApplicationModules)
+    module = models.ManyToManyField(ApplicationModule)
     def __unicode__(self):
         return self.short_name
 
-class Projects(models.Model):
+class Project(models.Model):
     name = models.CharField(max_length=100)
-    client = models.ForeignKey(Clients)
-    app = models.ManyToManyField(Applications)
+    client = models.ForeignKey(Client)
+    app = models.ManyToManyField(Application)
+    type = models.ForeignKey(ProjectType, blank ='true')
     def __unicode__(self):
         return self.name
     
+#class ProjectApps(models.Model):
+#    project = models.ManyToManyField(Project)
+#    app = models.ManyToManyRel(Application)
+
     
     
     
