@@ -1,0 +1,9 @@
+# python noise
+*.pyc
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
