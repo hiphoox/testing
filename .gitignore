@@ -11,5 +11,5 @@ profile
 #editors noise
 *.e4*
 .eric4project
-.ropeproject/
-
+.ropeproject
+*.kpf
