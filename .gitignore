@@ -1,0 +1,15 @@
+# python noise
+*.pyc
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+#editors noise
+*.e4*
+.eric4project
+.ropeproject
+*.kpf
