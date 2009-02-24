@@ -11,6 +11,7 @@ class ProjectType(models.Model):
     def __unicode__(self):
         return self.name
 
+## obsolete
 class ProjectComercialType(models.Model):
     PROJECT_COMERCIAL_TYPE_CHOICES = (('C','Cerrado'),('T','Tiempo y Materiales'))
     name=models.CharField(max_length=1, choices=PROJECT_COMERCIAL_TYPE_CHOICES)

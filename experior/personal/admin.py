@@ -1,11 +1,11 @@
 from personal.models import Person, Region, Puesto
 from django.contrib import admin
- 
+
 
 admin.site.register(Region)
 
-admin.site.register(Puesto)
 
+admin.site.register(Puesto)
 
 
 
@@ -26,13 +26,5 @@ class PersonAdmin(admin.options.ModelAdmin):
 #    list_filter=('name')
 
 
-
-
 admin.site.register(Person, PersonAdmin)
-
-
-
-
-
-
 
