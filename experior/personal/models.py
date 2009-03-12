@@ -26,9 +26,9 @@ class Puesto(models.Model):
         return self.name
 
 class Person(models.Model):
-    PREFERED_MAIL_CHOICE = (('1','email 1'),('2','email 2'))
-    PERSON_STATUS_CHOICES=(('A','Activo'), ('I','Inactivo'))
-    PERSON_TYPES_CHOICES =(('I','Interno'), ('E','Externo'), ('S','Staff'))
+    PREFERED_MAIL_CHOICE = (('email 1','email 1'),('email 2','email 2'))
+    PERSON_STATUS_CHOICES=(('Activo','Activo'), ('Inactivo','Inactivo'))
+    PERSON_TYPES_CHOICES =(('Interno','Interno'), ('Externo','Externo'), ('Staff','Staff'))
     first_name = models.CharField( 'Nombres', max_length=30)
     last_name = models.CharField( 'Apellidos', max_length=30)
     hiring_date = models.DateField('date hired')
@@ -41,7 +41,7 @@ class Person(models.Model):
     telephone_personal = models.IntegerField('Telefono celular', max_length=10, null=True,blank=True)
     email_1 = models.CharField(max_length=40, blank=True)
     email_2 = models.CharField(max_length=40, blank=True)
-    prefered_email = models.CharField(choices=PREFERED_MAIL_CHOICE, blank='true', max_length=1)
+    prefered_email = models.CharField(choices=PREFERED_MAIL_CHOICE, blank='true', max_length=7)
     puesto = models.ForeignKey(Puesto,  related_name='interno', blank=True)
     passport = models.CharField(max_length=20, blank=True)
     visa = models.CharField(max_length=20, blank = True)
