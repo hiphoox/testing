@@ -22,7 +22,7 @@ class Assignment(models.Model):
     def __unicode__(self):
         return '%s - %s' % (self.person ,  self.project)
  
-class TrackingHours(model.Model):
+class TrackingHours(models.Model):
     person = models.ForeignKey('personal.Person')
     begin_date = models.DateTimeField()
     end_date = models.DateTimeField()

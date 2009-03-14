@@ -80,7 +80,7 @@ class Project(models.Model):
     client = models.ForeignKey(Client)
     app = models.ManyToManyField(Application)
     type = models.CharField(choices=PROJECT_TYPE_CHOICES, blank ='true', max_length=19)
-    comtype = models.CharField(choices=PROJECT_COMERCIAL_TYPE_CHOICES, blank='true', max_length=10, short_name='Contract Type')
+    comtype = models.CharField(choices=PROJECT_COMERCIAL_TYPE_CHOICES, blank='true', max_length=10)
     def __unicode__(self):
         return self.name
     
