@@ -79,19 +79,11 @@ class Project(models.Model):
     name = models.CharField(max_length=100)
     client = models.ForeignKey(Client)
     app = models.ManyToManyField(Application)
-    type = models.CharField(choices=PROJECT_TYPE_CHOICES, blank ='true', max_length=19)
+    protype = models.CharField(choices=PROJECT_TYPE_CHOICES, blank ='true', max_length=19)
     comtype = models.CharField(choices=PROJECT_COMERCIAL_TYPE_CHOICES, blank='true', max_length=10)
     def __unicode__(self):
-        return self.name
+        return '%s - %s' % (self.client, self.name)
     
 #class ProjectApps(models.Model):
 #    project = models.ManyToManyField(Project)
 #    app = models.ManyToManyRel(Application)
-
-    
-    
-    
-    
-    
-    
-    

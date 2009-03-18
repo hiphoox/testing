@@ -15,7 +15,7 @@ class PersonAdmin(admin.options.ModelAdmin):
         ('Status',          {'fields': ['puesto', 'type', 'status', 'region']}),
         ('Contratacion',    {'fields': ['hiring_date','fire_date']}),
         ('Contacto',        {'fields': ['telephone_home', 'telephone_personal', 'email_1', 'email_2', 'prefered_email'] , 'classes': ['collapse']}),
-        ('Otros',           {'fields': ['birthday','passport','visa'], 'classes': ['collapse']}),
+        ('Otros',           {'fields': ['nomina', 'birthday','passport','visa'], 'classes': ['collapse']}),
         ('Comentarios',     {'fields': ['coment'], 'classes': ['collapse']}),
     ]
     list_display=('first_name' , 'last_name', 'status','region', 'puesto', 'antiguedad')

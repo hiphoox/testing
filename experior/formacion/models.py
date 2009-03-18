@@ -13,18 +13,12 @@ class Course(models.Model):
     def __unicode__(self):
         return "%s : %s" % (self.module, self.name)
 
-#class CourseStatus(models.Model):
-#    COURSE_STATUS_CHOICE = (('E', 'En Proceso') ,   ('P','Planeado')    ,   ('C','Cancelado')   , ('F','Finalizado') )
-#    name = models.CharField(max_length=1, choices=COURSE_STATUS_CHOICE)
-#    def __unicode__(self):
-#        return self.name
-
 class CourseControl(models.Model):
     COURSE_STATUS_CHOICE = (('E', 'En Proceso') ,   ('P','Planeado')    ,   ('C','Cancelado')   , ('F','Finalizado') )
+    person = models.ForeignKey('personal.Person')
     course = models.ForeignKey(Course)
-    person = models.ManyToManyRel('personal.Person')
-    begin_date = models.DateTimeField('start')
-    end_date = models.DateTimeField('end', null='true')
+    begin_date = models.DateField('start')
+    end_date = models.DateField('end', null='true')
     grade = models.IntegerField(null='true', blank='true')
     duration = models.IntegerField(blank='true', null='true')
     status = models.CharField(choices=COURSE_STATUS_CHOICE , max_length=1)

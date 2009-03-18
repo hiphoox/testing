@@ -79,8 +79,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django_extensions',
     'personal', 
-    'formacion', 
-    'clientes', 
+    'clientes',
     'asignaciones', 
-    'calidad', 
+    'calidad',
+    'formacion', 
 )
