@@ -78,6 +78,7 @@ class Project(models.Model):
     PROJECT_COMERCIAL_TYPE_CHOICES = (('Cerrado','Cerrado'),('Tiempo y Materiales','Tiempo y Materiales'))
     name = models.CharField(max_length=100)
     client = models.ForeignKey(Client)
+    intern_area = models.ForeignKey(InternalBusinessArea)
     app = models.ManyToManyField(Application)
     protype = models.CharField(choices=PROJECT_TYPE_CHOICES, blank ='true', max_length=19)
     comtype = models.CharField(choices=PROJECT_COMERCIAL_TYPE_CHOICES, blank='true', max_length=10)
