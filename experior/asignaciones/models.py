@@ -20,7 +20,8 @@ class Assignment(models.Model):
     status = models.CharField(choices=PROJECT_STATUS_CHOICES, max_length=2)
     project = models.ForeignKey('clientes.Project')
     rol = models.ForeignKey(ProjectRol)
-    time = models.IntegerField(help_text='Tiempo de la asignacion en horas')
+    time = models.IntegerField(help_text='Assigned time in integer hours')
+    fee = models.FloatField(max_length=5)
     def __unicode__(self):
         return '%s - %s' % (self.project, self.person)
 
@@ -32,17 +33,19 @@ class Activity(models.Model):
     def __unicode__(self):
         return '%s - %s' % (self.stage, self.name)
 
-class ReportedActivity(models.Model):
-    activity = models.ForeignKey(Activity)
-    detail = models.CharField(max_length=40, blank='true')
-    time = models.IntegerField(help_text='Time in integer hours')
-    def __unicode__(self):
-        return '%s : %ihrs' % (self.activity, self.time)
+#class ReportedActivity(models.Model):
+#    activity = models.ForeignKey(Activity)
+#    detail = models.CharField(max_length=40, blank='true')
+#    time = models.IntegerField(help_text='Time in integer hours')
+#    def __unicode__(self):
+#        return '%s : %ihrs' % (self.activity, self.time)
+#refactoring: reports 
 
 class TrackingHours(models.Model):
     assignment = models.ForeignKey(Assignment)
-    begin_date = models.DateField()
-    end_date = models.DateField()
-    activities = models.ManyToManyField(ReportedActivity)
+    date = models.DateField()
+    activity = models.ForeignKey(Activity)
+    detail = models.CharField(max_length=40, blank='true')
+    time = models.IntegerField(help_text='Time in integer hours')
     def __unicode__(self):
         return '%s - %s' % (self.assignment, self.end_date)
