@@ -1,26 +1,31 @@
 from django.db import models
 
+class concept(models.Model):
+    name = models.CharField(max_length=30)
+    def __unicode__(self):
+        return self.name
+
 class businessPlan(models.Model):
-    clave = models.CharField(max_lenght=20, blank=True)
-    project = models.ForeignKey('Clientes.Project')
-    concept = models.ForeignKey(concept , rel_class=ManyToMany)
+    clave = models.CharField(max_length=20)
+    project = models.ForeignKey('clientes.Project')
+    concept = models.ForeignKey(concept)
+    amount = models.FloatField()
     def __unicode__(self):
         return self.clave
 
-class concept(models.Model):
-    concept = models.CharField(max_lenght=100)
-    monto = models.FloatField()
+
+
+class Stages(models.Model):
+    STAGES = (('A','Analisis')  ,   ('D','Diseno')  ,   ('E','Ejecucion')   ,   ('R','Regresion') ,   ('C','Cierre'))
+    name = models.CharField(max_length=10, choices=STAGES)
     def __unicode__(self):
-        return self.concept
+        return self.name
+
 
 class operativeCommitment(models.Model):
-    commitment =  models.ForeignKey(compromiso, rel_class=ManyToMany)
+    project = models.ForeignKey('clientes.Project')
+    stage = models.ForeignKey(Stages)
+    milestone = models.CharField(max_length=30)
+    date = models.DateField(blank=True, null=True)
     def __unicode__(self):
-        return self.commitment
-    
-class commitment(models.Model):
-    stage = models.ForeignKey('planeacion.Stages')
-    milestone = models.CharField(max_lenght=50)
-    def __unicode__(self):
-        return '%s' % (self.stage)
-    
+        return self.project
