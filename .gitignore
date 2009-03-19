@@ -9,7 +9,7 @@
 profile
 
 #editors noise
-*.e4*
+*.e4p
 .eric4project
 .ropeproject
 *.kpf
