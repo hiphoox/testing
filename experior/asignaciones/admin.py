@@ -1,4 +1,4 @@
-from asignaciones.models import Assignment, ProjectRol, Activity, TrackingHours, ReportedActivity
+from asignaciones.models import Assignment, ProjectRol, Activity, TrackingHours
 from django.contrib import admin
  
 
@@ -6,7 +6,6 @@ admin.site.register(Assignment)
 admin.site.register(ProjectRol)
 admin.site.register(Activity)
 admin.site.register(TrackingHours)
-admin.site.register(ReportedActivity)
 
 
 class AssignmentAdmin(admin.options.ModelAdmin):

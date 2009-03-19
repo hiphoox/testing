@@ -1,7 +1,7 @@
 from django.db import models
 
 class businessPlan(models.Model):
-    clave = models.CharField(max_lenght=20, blank='true')
+    clave = models.CharField(max_lenght=20, blank=True)
     project = models.ForeignKey('Clientes.Project')
     concept = models.ForeignKey(concept , rel_class=ManyToMany)
     def __unicode__(self):
