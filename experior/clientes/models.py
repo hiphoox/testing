@@ -32,11 +32,13 @@ class InternalBusinessArea(models.Model):
 #        return self.name
  
 
-class BusinesClass(models.Model):
+class BusinessClass(models.Model):
     name = models.CharField(max_length=50)
     def __unicode__(self):
         return self.name
- 
+    class Meta:
+        verbose_name_plural = "Business Clases"
+
 class Client(models.Model):
     name = models.CharField(max_length=50)
     legal_ame = models.CharField(max_length=50)
@@ -45,10 +47,11 @@ class Client(models.Model):
 
 class ClientBusiness(models.Model):
     client = models.ManyToManyField(Client)
-    b_class = models.ManyToManyField(BusinesClass)
+    b_class = models.ManyToManyField(BusinessClass)
     i_class = models.ManyToManyField(InternalBusinessArea)
     def __unicode__(self):
-        return '%s - %s > %s' % (Clients.name ,  BusinesClasses.name ,  InternalBusinessArea.name)
+
+        return '%s - %s' % (client,  i_class)
 
 class OrganizationalPerson(models.Model):
     CLIENT_STATUS = (('Activo', 'Activo' ,) , ('Inactivo', 'Inactivo'))
@@ -77,8 +80,8 @@ class Project(models.Model):
     PROJECT_TYPE_CHOICES = (('Fabrica','Fabrica'),('Asignacion','Asignacion'))
     PROJECT_COMERCIAL_TYPE_CHOICES = (('Cerrado','Cerrado'),('Tiempo y Materiales','Tiempo y Materiales'))
     name = models.CharField(max_length=100)
-    client = models.ForeignKey(Client)
-    intern_area = models.ForeignKey(InternalBusinessArea)
+    client = models.ForeignKey(ClientBusiness)
+    organizational = models.ForeignKey(OrganizationalPerson)
     app = models.ManyToManyField(Application)
     protype = models.CharField(choices=PROJECT_TYPE_CHOICES, blank ='true', max_length=19)
     comtype = models.CharField(choices=PROJECT_COMERCIAL_TYPE_CHOICES, blank='true', max_length=10)
